@@ -1,0 +1,7 @@
+# chartmuseum: 
+env:
+  open:
+    ALLOW_OVERWRITE: true
+    # DISABLE_METRICS: false
+    DISABLE_API: false
+    # AWS_SDK_LOAD_CONFIG: true

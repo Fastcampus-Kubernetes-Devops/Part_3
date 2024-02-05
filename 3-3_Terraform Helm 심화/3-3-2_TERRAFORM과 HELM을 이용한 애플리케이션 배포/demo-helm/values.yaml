@@ -1,0 +1,16 @@
+accountId: "ACCOUNT_ID"
+serviceAccountNames: 
+  - &sa1 ebs-csi-controller-sa
+  - &sa2 load-balancer-controller-sa
+
+aws-ebs-csi-driver:
+  controller:
+    serviceAccount:
+      create: false
+      name: *sa1
+aws-load-balancer-controller:
+  clusterName: dev-cluster
+  fullnameOverride: load-balancer-controller
+  serviceAccount:
+    create: false
+    name: *sa2

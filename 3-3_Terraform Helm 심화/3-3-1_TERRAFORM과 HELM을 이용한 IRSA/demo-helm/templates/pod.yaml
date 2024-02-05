@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu
+spec:
+  serviceAccountName: {{.Values.serviceAccountName}}
+  containers:
+    - name: ubuntu
+      image: ubuntu
+      command: ['bash']
+      stdin: true
+      tty: true

@@ -1,0 +1,10 @@
+apiVersion: v2
+name: none
+description: Host your own Helm Chart Repository
+type: application
+version: 3.10.1
+
+dependencies:
+  - name: chartmuseum
+    version: 3.10.1
+    repository: https://chartmuseum.github.io/charts
